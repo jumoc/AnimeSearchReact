@@ -78,7 +78,6 @@ const useStyles = makeStyles({
     },
     ul: {
         paddingLeft: 0,
-        minWidth: 500
     },
     carrouselControllers: {
         alignSelf: 'center',
