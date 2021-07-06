@@ -101,6 +101,19 @@ const useStyles = makeStyles({
 });
 
 /**
+ * calculateAverageScore - calculates de average Score of all the animes
+ * @param animes - list of all anime objects
+ * return - average of all the anime scores
+ */
+const calculateAverageScore = (animes) => {
+    let scoreTotal = 0;
+    animes.forEach((anime) => {
+        scoreTotal += anime.score;
+    });
+    return (scoreTotal / animes.length);
+}
+
+/**
  * AnimeCardList - creates a AnimeCardList component
  * @returns AnimeCardList
  */
